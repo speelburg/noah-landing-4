@@ -129,7 +129,7 @@ export default function Home() {
         "☯︎ DIRECTOR ☯︎",
         "♡ ANIMATOR ♡",
       ]).flat().map((item, i) => (
-        <span key={i} className="mx-6 whitespace-nowrap bg-#f5c747">
+        <span key={i} className="mx-6 whitespace-nowrap">
           {item}
         </span>
       ))}
@@ -147,7 +147,7 @@ export default function Home() {
             onClick={() => setMenuOpen(true)}
             className="hover:bg-transparent focus:outline-none focus:ring-0"
           >
-            <Menu className="text-[#0e730e]" />
+            <Menu className="text-[#E16A8C]" />
           </Button>
         </div>
       )}

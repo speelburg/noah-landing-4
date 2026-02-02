@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ff892b;   /* brand orange as default background */
+  --background: #E16A8C;   /* brand orange as default background */
   --foreground: #171717;   /* dark text */
 }
 
@@ -27,7 +27,7 @@ body {
   padding: 0;
 
   /* Fallback color — visible behind video opacity or if video fails */
-  background-color: #ff892b;
+  background-color: #E16A8C;
 
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
