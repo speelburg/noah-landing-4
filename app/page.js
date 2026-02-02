@@ -140,7 +140,7 @@ export default function Home() {
 
       {/* Menu button */}
       {!menuOpen && (
-        <div className="fixed top-[45px] right-4 z-50">
+        <div className="fixed top-[55px] right-4 z-50">
           <Button
             variant="ghost"
             size="icon"
