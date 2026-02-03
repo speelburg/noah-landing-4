@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       </head>
 
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased h-full bg-[#f5c747]`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased h-full bg-[#1f9145]`}>
         {/* Site-wide background video (behind everything) */}
         <video
           autoPlay
