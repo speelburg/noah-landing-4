@@ -18,6 +18,8 @@ export default function RootLayout({ children }) {
           name="viewport"
           content="width=device-width, initial-scale=1, viewport-fit=cover"
         />
+
+        {/* Keep iOS/browser chrome pink */}
         <meta name="theme-color" content="#E16A8C" />
         <meta
           name="theme-color"
