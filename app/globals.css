@@ -36,8 +36,13 @@ body {
   overscroll-behavior: none;
 }
 
-/* iOS bottom safe-area color */
+/* iOS bottom safe-area color (home indicator) */
 @supports (padding: env(safe-area-inset-bottom)) {
+  body {
+    /* reserve space so content doesn't cover the bar */
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
   body::after {
     content: "";
     position: fixed;
@@ -46,7 +51,7 @@ body {
     bottom: 0;
     height: env(safe-area-inset-bottom);
     background-color: #E16A8C; /* PINK */
-    z-index: 9999;
+    z-index: 99999;            /* MUST be above page content */
     pointer-events: none;
   }
 }
