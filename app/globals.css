@@ -36,15 +36,10 @@ body {
   overscroll-behavior: none;
 }
 
-/* iOS: make the area behind Safari's bottom UI pink (NOT a footer) */
-@supports (-webkit-touch-callout: none) {
-  :root {
-    --ios-bottom-ui: 140px; /* tweak 120–180 if needed */
-  }
-
+/* iOS bottom safe-area color (home indicator only) */
+@supports (padding: env(safe-area-inset-bottom)) {
   body {
-    /* keep content out of the Safari UI zone */
-    padding-bottom: calc(env(safe-area-inset-bottom) + var(--ios-bottom-ui));
+    padding-bottom: env(safe-area-inset-bottom);
   }
 
   body::after {
@@ -53,12 +48,9 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-
-    /* paint only the zone that Safari overlaps */
-    height: calc(env(safe-area-inset-bottom) + var(--ios-bottom-ui));
-
-    background: #E16A8C; /* pink */
-    z-index: 2;          /* above video (z-0), below content (z-10) */
+    height: env(safe-area-inset-bottom);
+    background-color: #E16A8C; /* PINK */
+    z-index: 99999;
     pointer-events: none;
   }
 }
