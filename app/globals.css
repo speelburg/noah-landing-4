@@ -35,3 +35,18 @@ body {
   -webkit-text-size-adjust: 100%;
   overscroll-behavior: none;
 }
+
+/* iOS bottom safe-area color */
+@supports (padding: env(safe-area-inset-bottom)) {
+  body::after {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: env(safe-area-inset-bottom);
+    background-color: #E16A8C; /* PINK */
+    z-index: 9999;
+    pointer-events: none;
+  }
+}
