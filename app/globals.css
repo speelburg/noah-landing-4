@@ -27,7 +27,7 @@ body {
   padding: 0;
 
   /* Fallback color — visible behind video opacity or if video fails */
-  background-color: #1f9145;
+  background-color: #E16A8C;
 
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
